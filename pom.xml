@@ -21,7 +21,7 @@
     </properties>
 
     <modules>
-<!--        <module>tk-blog-dubbo-demo-main</module>-->
+        <module>tk-blog-dubbo-demo-main</module>
         <module>tk-blog-dubbo-demo-rpc</module>
     </modules>
 

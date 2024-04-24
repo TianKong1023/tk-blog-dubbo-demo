@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kk.blog.mapper.ArticleMapper">
+    <insert id="insertArticle" parameterType="com.kk.blog.entity.ArticleInfo">
+        INSERT INTO blog_article(id, user_id, title, type, tags, href, cover_src, content, introduction, visit_count, publish_flag, top_flag, del_flag, create_time, update_time)
+        values (#{id}, #{userId}, #{title}, #{type}, #{tags}, #{href}, #{coverSrc}, #{content}, #{introduction}, #{visitCount}, #{publishFlag}, #{topFlag}, #{delFlag}, #{createTime}, #{updateTime})
+    </insert>
+
+    <update id="updateArticle" parameterType="com.kk.blog.entity.ArticleInfo">
+        UPDATE blog_article
+        SET
+            user_id = #{userId},
+            title = #{title},
+            type = #{type},
+            tags = #{tags},
+            href = #{href},
+            cover_src = #{coverSrc},
+            content = #{content},
+            introduction = #{introduction},
+            visit_count = #{visitCount},
+            publish_flag = #{publishFlag},
+            top_flag = #{topFlag},
+            del_flag = #{delFlag},
+            update_time = #{updateTime}
+        WHERE
+            id = #{id}
+    </update>
+
+</mapper>

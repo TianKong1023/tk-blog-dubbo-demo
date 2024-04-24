@@ -1,0 +1,29 @@
+spring:
+ application:
+  name: demo
+ datasource:
+  driver-class-name: com.mysql.jdbc.Driver
+  password: 123456
+  username: root
+  url: jdbc:mysql://127.0.0.1:3306/my_blog?useSSL=false&allowPublicKeyRetrieval=true
+
+server:
+ port: 8888
+
+logging:
+ level:
+   com.kk.blog: DEBUG
+ file:
+  path: /path/blog.log
+
+thread-pool:
+ scheduledTask:
+  core-pool-size: 5
+  max-pool-size: 5
+  queue-size: 10
+  keep-alive-seconds: 10
+ excelTask:
+  core-pool-size: 5
+  max-pool-size: 5
+  queue-size: 10
+  keep-alive-seconds: 10
