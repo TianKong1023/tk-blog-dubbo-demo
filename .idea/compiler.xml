@@ -7,13 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="tk-blog-dubbo-demo-rpc" />
+        <module name="tk-blog-dubbo-demo-main" />
+        <module name="tk-blog-dubbo-demo-consumer" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="tk-blog-dubbo-demo" target="1.8" />
-      <module name="tk-blog-dubbo-demo-main" target="1.8" />
-      <module name="tk-blog-dubbo-demo-rpc" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

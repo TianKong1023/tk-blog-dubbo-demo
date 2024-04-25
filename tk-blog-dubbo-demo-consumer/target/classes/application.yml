@@ -1,0 +1,16 @@
+dubbo:
+  application:
+    name: tk-blog-dubbo-consumer
+    qos-port: 33333
+  protocol:
+    name: dubbo
+    port: 22221
+  registry:
+    address: zookeeper://${zookeeper.address:127.0.0.1}:2181
+server:
+  port: 8088
+logging:
+  level:
+    org.org.example: DEBUG
+  file:
+    path: /path/blog1.log

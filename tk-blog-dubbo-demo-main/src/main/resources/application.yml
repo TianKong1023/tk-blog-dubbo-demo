@@ -27,3 +27,12 @@ thread-pool:
   max-pool-size: 5
   queue-size: 10
   keep-alive-seconds: 10
+
+dubbo:
+ application:
+  name: tk-blog-dubbo-demo-main
+ protocol:
+  name: dubbo
+  port: 22220
+ registry:
+  address: zookeeper://${zookeeper.address:127.0.0.1}:2181
